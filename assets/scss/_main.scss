@@ -1,0 +1,200 @@
+.background {
+  background: $background-accent;
+}
+// Header
+.header {
+  padding: 20px;
+  margin-bottom: 71px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: -43px;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 44px;
+      background: $blue-color;
+      opacity: 0.3;
+    }
+  }
+
+  &__menu {
+    margin: 0 auto 0 83px;
+    margin-top: -6px;
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      padding-right: 30px;
+    }
+
+    a {
+      font-size: 15px;
+      line-height: 19px;
+      color: $black-color;
+
+      &:hover {
+        color: $blue-color;
+      }
+    }
+  }
+
+  &__btn {
+    font-size: 15px;
+    line-height: 19px;
+    width: 150px;
+    height: 44px;
+    background: $white-color;
+    color: $blue-color;
+
+    &:hover {
+      color: $white-color;
+    }
+  }
+}
+
+// Welcome
+.welcome {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 552px;
+
+  &__wrapper {
+    text-align: center;
+    max-width: 760px;
+  }
+
+  h2 {
+    margin-bottom: 51px;
+  }
+  h1 {
+    margin-bottom: 18px;
+  }
+  p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: $black-color;
+    margin-bottom: 54px;
+  }
+
+  a {
+    margin: 0 auto;
+  }
+
+  &__img {
+    width: 560px;
+    height: 560px;
+    position: absolute;
+    bottom: -138px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+  }
+}
+
+// About
+.about {
+  margin-top: 224px;
+  margin-bottom: 118px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h5 {
+    margin-bottom: 51px;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  &__left-part {
+    max-width: 560px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    svg {
+      margin-bottom: 27px;
+    }
+
+    h4 {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__card {
+    max-width: 260px;
+    margin-bottom: 40px;
+  }
+
+  &__right-part {
+    padding-left: 20px;
+    margin-top: 71px;
+    position: relative;
+
+    .img-2 {
+      position: absolute;
+      bottom: 53px;
+      right: 100px;
+      width: 360px;
+      height: 269px;
+    }
+  }
+}
+
+// Mission 
+.mission {
+  margin-bottom: 141px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    width: 50%;
+    padding-right: 20px;
+  }
+
+  &__content {
+    width: 50%;
+    padding-left: 20px;
+
+    p {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 28px;
+      color: $black-color;
+      margin-bottom: 53px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 51px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    color: $blue-color;
+    text-decoration: underline;
+  }
+}

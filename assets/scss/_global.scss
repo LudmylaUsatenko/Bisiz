@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Gothic A1", sans-serif;
+  background: $white-color;
+  color: $grey-color;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 400;
+  color: $white-color;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+*:before,
+*:after,
+*:hover:before,
+*:hover:after,
+a,
+a:hover,
+button,
+button:hover,
+svg,
+svg:hover,
+span,
+span:hover,
+li,
+li:hover,
+p,
+p:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.1em;
+  color: $black-color;
+  @media (max-width: $tablet) {
+    font-size: 48px;
+  }
+  @media (max-width: $mobile) {
+    font-size: 38px;
+  }
+  @media (max-width: 425px) {
+    font-size: 28px;
+  }
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 53px;
+  color: $black-color;
+  @media (max-width: $tablet) {
+    font-size: 40px;
+  }
+
+  @media (max-width: $mobile) {
+  }
+
+  @media (max-width: 425px) {
+    font-size: 28px;
+  }
+}
+
+.h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: $black-color;
+}
+
+.h4 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: $black-color;
+}
+
+.h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $blue-color;
+}
+
+.btn {
+  width: 240px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 22px;
+  color: $white-color;
+  background: $blue-color;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background: $black-color;
+  }
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+}

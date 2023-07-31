@@ -1,0 +1,22 @@
+// Vars
+$background-accent: #e6f2fe;
+$icon-color: #87bfe7;
+$grey-color: #777777;
+$white-color: #ffffff;
+$black-color: #222222;
+$blue-color: #1080d0;
+$tablet: 1024px;
+$mobile: 767px;
+
+// Mixins
+@mixin for-tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin for-mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
