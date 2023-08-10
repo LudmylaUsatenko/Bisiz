@@ -157,19 +157,21 @@ p:hover {
   }
 }
 
-.h2 {
+.title {
   font-weight: 700;
   font-size: 48px;
   line-height: 53px;
   color: #222222;
+  margin-bottom: 30px;
 }
 @media (max-width: 1024px) {
-  .h2 {
+  .title {
     font-size: 40px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 425px) {
-  .h2 {
+  .title {
     font-size: 28px;
   }
 }
@@ -188,13 +190,19 @@ p:hover {
   color: #222222;
 }
 
-.h5 {
+.subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #1080d0;
+  margin-bottom: 51px;
+}
+@media (max-width: 1024px) {
+  .subtitle {
+    margin-bottom: 40px;
+  }
 }
 
 .btn {
@@ -305,20 +313,17 @@ p:hover {
   text-align: center;
   max-width: 760px;
 }
-.welcome h2 {
-  margin-bottom: 51px;
-}
 .welcome h1 {
   margin-bottom: 18px;
 }
-.welcome p {
+.welcome__text {
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
   color: #222222;
   margin-bottom: 54px;
 }
-.welcome a {
+.welcome .btn {
   margin: 0 auto;
 }
 .welcome__img {
@@ -344,12 +349,6 @@ p:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.about h5 {
-  margin-bottom: 51px;
-}
-.about h2 {
-  margin-bottom: 40px;
 }
 .about__left-part {
   max-width: 560px;
@@ -406,22 +405,109 @@ p:hover {
   width: 50%;
   padding-left: 20px;
 }
-.mission__content p {
+.mission__text {
   font-size: 22px;
   font-weight: 600;
   line-height: 28px;
   color: #222222;
   margin-bottom: 53px;
 }
-.mission__subtitle {
-  margin-bottom: 51px;
-}
-.mission__title {
-  margin-bottom: 30px;
-}
 .mission__link {
   color: #1080d0;
   text-decoration: underline;
+}
+
+.whyus {
+  margin-bottom: 133px;
+}
+.whyus__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.whyus .subtitle {
+  text-align: center;
+}
+.whyus .title {
+  text-align: center;
+}
+.whyus__left-part {
+  width: 50%;
+  padding-right: 20px;
+}
+.whyus__left-part .h4 {
+  margin-bottom: 40px;
+}
+.whyus__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+.whyus__left-card {
+  position: relative;
+}
+.whyus__text {
+  padding-left: 56px;
+}
+.whyus__right-part {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  width: 50%;
+  padding-left: 20px;
+}
+.whyus__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #E6F2FE;
+}
+.whyus__img img {
+  width: 11px;
+  height: 14px;
+}
+.whyus__right-card {
+  height: 380px;
+  border: 1px solid #D4E5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 22px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.whyus__right-card .svg-box {
+  margin-bottom: 35px;
 }
 
 @media (max-width: 1073px) {
@@ -509,16 +595,11 @@ p:hover {
     bottom: -100px;
   }
 }
-@media (max-width: 767px) {
-  .welcome h2 {
-    margin-bottom: 40px;
-  }
-}
 @media (max-width: 425px) {
   .welcome {
     padding-bottom: 240px;
   }
-  .welcome p {
+  .welcome__text {
     font-size: 20px;
   }
   .welcome__img {
@@ -528,6 +609,11 @@ p:hover {
   }
 }
 
+@media (min-width: 1025px) {
+  .about .title {
+    margin-bottom: 40px;
+  }
+}
 @media (max-width: 1083px) {
   .about__right-part {
     margin-top: 159px;
@@ -553,16 +639,13 @@ p:hover {
     margin-top: 180px;
     margin-bottom: 60px;
   }
-  .about h5 {
-    margin-bottom: 40px;
-  }
 }
 @media (max-width: 767px) {
   .about {
     margin-top: 140px;
     margin-bottom: 40px;
   }
-  .about h2 {
+  .about .title {
     text-align: center;
   }
   .about__card {
@@ -574,19 +657,16 @@ p:hover {
   .mission {
     margin-bottom: 100px;
   }
-  .mission__subtitle {
-    margin-bottom: 40px;
-  }
 }
 @media (max-width: 830px) {
-  .mission__subtitle {
+  .mission .subtitle {
     margin-bottom: 30px;
   }
-  .mission__title {
+  .mission .title {
     font-size: 27px;
     margin-bottom: 20px;
   }
-  .mission p {
+  .mission__text {
     font-size: 17px;
     line-height: 23px;
   }
@@ -608,5 +688,88 @@ p:hover {
 @media (max-width: 550px) {
   .mission__img {
     display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .whyus .title {
+    margin-bottom: 51px;
+  }
+  .whyus__right-card:hover {
+    background: #D4E5F5;
+  }
+  .whyus__right-card:hover .svg-box,
+  .whyus__right-card:hover .h4 {
+    opacity: 0;
+    margin: 0;
+    visibility: hidden;
+    content-visibility: hidden;
+  }
+  .whyus__right-card:hover .whyus__text-hover {
+    opacity: 1;
+    visibility: visible;
+    content-visibility: visible;
+  }
+  .whyus__right-card .whyus__text-hover {
+    opacity: 0;
+    visibility: hidden;
+    content-visibility: hidden;
+  }
+}
+@media (max-width: 1080px) {
+  .whyus__right-card {
+    height: inherit;
+  }
+}
+@media (max-width: 1024px) {
+  .whyus {
+    margin-bottom: 100px;
+  }
+  .whyus__left-part {
+    width: 100%;
+    padding-right: 0px;
+    margin-bottom: 40px;
+  }
+  .whyus__left-part .h4 {
+    text-align: center;
+  }
+  .whyus__right-part {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .whyus__right-part .h4 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .whyus {
+    margin-bottom: 60px;
+  }
+  .whyus__left-part .h4 {
+    margin-bottom: 30px;
+  }
+  .whyus__content {
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .whyus__img {
+    width: 26px;
+    height: 26px;
+  }
+  .whyus__right-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .whyus__right-card {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }

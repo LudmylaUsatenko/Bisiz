@@ -90,16 +90,11 @@
       bottom: -100px;
     }
   }
-  @media (max-width: $mobile) {
-    h2 {
-      margin-bottom: 40px;
-    }
-  }
 
   @media (max-width: 425px) {
     padding-bottom: 240px;
 
-    p {
+    &__text {
       font-size: 20px;
     }
 
@@ -113,9 +108,17 @@
 
 // About
 .about {
+
+  @media(min-width: 1025px) {
+    .title {
+      margin-bottom: 40px;
+    }
+  } 
+
   @media (max-width: 1083px) {
     &__right-part {
       margin-top: 159px;
+
       .img-2 {
         display: none;
       }
@@ -140,17 +143,13 @@
   @media (max-width: $tablet) {
     margin-top: 180px;
     margin-bottom: 60px;
-
-    h5 {
-      margin-bottom: 40px;
-    }
   }
 
   @media (max-width: $mobile) {
     margin-top: 140px;
     margin-bottom: 40px;
 
-    h2 {
+    .title {
       text-align: center;
     }
 
@@ -165,24 +164,20 @@
 
   @media (max-width: $tablet) {
     margin-bottom: 100px;
-
-    &__subtitle {
-      margin-bottom: 40px;
-    }
   }
 
   @media (max-width: 830px) {
 
-    &__subtitle {
+    .subtitle {
       margin-bottom: 30px;
     }
 
-    &__title {
+    .title {
       font-size: 27px;
       margin-bottom: 20px;
     }
 
-    p {
+    &__text {
       font-size: 17px;
     line-height: 23px
     }
@@ -207,6 +202,102 @@
 
     &__img {
       display: none;
+    }
+  }
+}
+
+// Why us
+.whyus {
+
+  @media(min-width: 1025px) {
+    .title {
+      margin-bottom: 51px;
+    }
+
+    &__right-card {
+      &:hover {
+        background:#D4E5F5;
+      
+        .svg-box, 
+        .h4 {
+          opacity:0;
+          margin: 0;
+          visibility: hidden;
+          content-visibility: hidden;
+        }
+  
+        .whyus__text-hover {
+          opacity:1;
+          visibility: visible;
+          content-visibility: visible;
+        }
+      }
+
+      .whyus__text-hover {
+        opacity:0;
+        visibility: hidden;
+        content-visibility: hidden;
+      }
+    }
+  }
+
+  @media (max-width: 1080px) {
+     &__right-card {
+      height: inherit;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 100px;
+
+    &__left-part {
+      width: 100%;
+      padding-right: 0px;
+      margin-bottom: 40px;
+
+      .h4 {
+        text-align: center;
+      }
+    }
+
+    &__right-part {
+      width: 100%;
+      padding-left: 0px;
+
+      .h4 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 60px;
+
+    &__left-part {
+      .h4 {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__content {
+      grid-column-gap: 0px; 
+      grid-row-gap: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__img {
+      width: 26px;
+      height: 26px;
+    }
+    &__right-part {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    &__right-card {
+      width: 100%;
+      margin-bottom: 20px;
     }
   }
 }
