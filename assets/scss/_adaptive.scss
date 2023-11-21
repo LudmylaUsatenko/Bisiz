@@ -187,21 +187,12 @@
     margin-bottom: 80px;
 
     &__img {
-      width: 50%;
-      padding-right: 0px;
-      margin: 0 auto 30px;
+      display: none;
     }
   
     &__content {
       width: 100%;
       padding-left: 0px;
-    }
-  }
-
-  @media (max-width: 550px) {
-
-    &__img {
-      display: none;
     }
   }
 }
@@ -300,4 +291,162 @@
       margin-bottom: 20px;
     }
   }
+}
+
+// Help 
+.help {
+
+  @media (max-width: 1030px) {
+ }
+  @media (max-width: $tablet) {
+      margin-bottom: 100px;
+
+      &__wrapper {
+        padding: 137px 20px 240px;
+      }
+
+      .img-container {
+        bottom: -200px;
+        width: 400px;
+        height: 400px;
+      }
+  }
+
+  @media (max-width: $mobile) {
+      margin-bottom: 60px;
+
+      &__wrapper {
+        padding: 100px 20px 240px;
+      }
+
+      .img-container {
+        bottom: -170px;
+        width: 350px;
+        height: 350px;
+      }
+  }
+
+  @media (max-width: 425px) {
+    &__wrapper {
+      padding: 80px 20px 170px;
+  }
+
+  .img-container {
+    bottom: -145px;
+    width: 290px;
+    height: 290px;
+}
+  }
+
+}
+
+// Services
+.services {
+  @media (max-width: $tablet) {
+    margin-top: -235px;
+    padding: 450px 0 100px;
+      margin-bottom: 100px;
+
+      &__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  }
+
+  @media (max-width: $mobile) {
+    padding: 420px 0 60px;
+      margin-bottom: 60px;
+
+      &__wrapper {
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+      }
+
+      &__card {
+        padding: 40px 20px;
+      }
+  }
+
+  @media(max-width: 580px) {
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 425px) {
+    padding: 400px 0 60px;
+  }
+}
+
+// Prices 
+.prices {
+  @media (max-width: $tablet) {
+    margin-bottom: 100px;
+
+    &__content {
+      column-gap: 20px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 60px;
+
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 20px;
+    }
+
+    &__card-left {
+      padding: 60px 20px;
+    }
+
+    &__card {
+      padding: 60px 20px 58px;
+    }
+  }
+
+  @media (max-width: 425px) {
+
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    ul {
+      margin-bottom: 35px;
+    }
+
+    &__btn {
+      width: 240px;
+      margin-bottom: 30px;
+    }
+  } 
+}
+
+// Team 
+.team {
+  @media (max-width: $tablet) {
+    margin-bottom: 100px;
+
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 40px;
+      row-gap: 40px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: 585px) {
+    &__wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 40px;
+      row-gap: 40px;
+    }
+
+    &__text {
+      max-width: inherit;
+    }
+  }
+
 }

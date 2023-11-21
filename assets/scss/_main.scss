@@ -1,6 +1,7 @@
 .background {
   background: $background-accent;
 }
+
 // Header
 .header {
   padding: 20px;
@@ -14,6 +15,7 @@
 
   &__logo {
     position: relative;
+
     &::after {
       position: absolute;
       content: "";
@@ -76,9 +78,14 @@
     max-width: 760px;
   }
 
+  &__subtitle {
+    justify-content: center;
+  }
+
   h1 {
     margin-bottom: 18px;
   }
+
   &__text {
     font-weight: 600;
     font-size: 24px;
@@ -106,6 +113,7 @@
 .about {
   margin-top: 224px;
   margin-bottom: 118px;
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -177,20 +185,24 @@
   &__link {
     color: $blue-color;
     text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
 // Why Us 
 .whyus {
-margin-bottom: 133px;
+  margin-bottom: 137px;
 
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .subtitle {
-    text-align: center;
+  &__subtitle {
+    justify-content: center;
   }
 
   .title {
@@ -264,4 +276,377 @@ margin-bottom: 133px;
   }
 }
 
+// Help
+.help {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 137px 20px 291px;
+    background: $blue-color;
+    text-align: center;
 
+    h3 {
+      color: $white-color;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: $white-color;
+      margin-bottom: 45px;
+    }
+  }
+
+  &__btn {
+    color: $black-color;
+    background: $white-color;
+    margin: 0 auto;
+
+    &:hover {
+      color: $white-color ;
+    }
+  }
+
+  .img-container {
+    position: absolute;
+    bottom: -235px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 480px;
+    height: 480px;
+  }
+}
+
+// Services 
+.services {
+  margin-top: -135px;
+  padding: 509px 0 140px;
+  margin-bottom: 140px;
+  background: #E6F2FE;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+
+  &__text {
+    margin-bottom: 44px;
+  }
+
+  &__card {
+    background: $white-color ;
+    padding: 60px 40px 80px;
+    height: 100%;
+  }
+
+  &__icon {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 46px;
+  }
+
+  &__img {
+    height: 100%;
+  }
+
+  &__pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// Prices
+.prices {
+  margin-bottom: 129px;
+
+  &__wrapper {
+    text-align: center;
+
+    .title {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__subtitle {
+    justify-content: center;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    max-width: 760px;
+    width: 100%;
+    margin: 0 auto;
+
+    .title {
+      margin-bottom: 0;
+    }
+  }
+
+  &__card {
+    padding: 60px 40px 58px;
+    border: 1px solid #D4E5F5;
+  }
+
+  &__card-left {
+    padding: 116px 40px;
+  }
+
+  .h3 {
+    margin-bottom: 24px;
+  }
+
+  span {
+    font-size: 17px;
+
+    .title {
+      line-height: 25px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 36px;
+  }
+
+  &__value-1 {
+    color: $blue-color;
+    line-height: 45px;
+  }
+
+  &__value-2 {
+    color: $blue-color;
+    margin-bottom: 31px;
+  }
+
+  ul {
+    margin-bottom: 42px;
+    display: inline-block;
+    text-align: left;
+
+    li {
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__link {
+    color: $blue-color;
+    text-decoration-line: underline;
+
+    &:hover {
+      color: $black-color;
+    }
+  }
+
+  &__headline {
+    color: $blue-color;
+    display: inline-block;
+    padding: 6px 11px;
+    background: $background-accent;
+    margin-bottom: 28px;
+    line-height: 22px;
+  }
+
+  &__btn {
+    width: 260px;
+    margin: 0 auto;
+    margin-bottom: 39px;
+  }
+}
+
+// Results 
+.results {
+  margin-bottom: 144px;
+  padding: 140px 0 188px;
+  background: $blue-color;
+  color: $white-color;
+
+  .title {
+    color: $white-color;
+  }
+
+  &__subtitle {
+    display: flex;
+    font-weight: 700;
+    color: $white-color;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &-left {
+      padding-right: 100px;
+    }
+
+    .h4 {
+      margin-bottom: 36px;
+      color: $white-color;
+    }
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+
+  &__paragraph {
+    margin-bottom: 22px;
+  }
+
+  &__percent {
+    margin-bottom: 0;
+    display: inline-block;
+  }
+
+  .percent1 {
+    padding-left: 37px;
+    padding-bottom: 3px;
+  }
+
+  .percent2 {
+    padding-left: 405px;
+  }
+
+  .percent3 {
+    padding-left: 195px;
+  }
+
+  &__card {
+    &:not(:last-child) {
+      margin-bottom: 31px;
+    }
+  }
+
+  &__line1 {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      content: "";
+      width: 32px;
+      height: 5px;
+      background: $white-color;
+      position: absolute;
+      top: -4px;
+    }
+  }
+
+  &__line2 {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      content: "";
+      width: 393px;
+      height: 5px;
+      background: $white-color;
+      position: absolute;
+      top: -7px;
+    }
+  }
+
+  &__line3 {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      content: "";
+      width: 184px;
+      height: 5px;
+      background: $white-color;
+      position: absolute;
+      top: -7px;
+    }
+  }
+
+  .img-container {
+    position: absolute;
+    bottom: -318px;
+    left: 43%;
+    transform: translateX(-50%);
+    width: 480px;
+    height: 480px;
+  }
+}
+
+// Team
+.team {
+  display: flex;
+  margin-bottom: 154px;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+  }
+
+  .img-container {
+    width: 148px;
+    height: 148px;
+    margin-bottom: 30px;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__h4 {
+    margin-bottom: 8px;
+  }
+
+  &__paragraph {
+    color: $blue-color;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    max-width: 261px;
+    width: 100%;
+  }
+
+  &__btn {
+    margin-bottom: 30px;
+    width: 150px;
+    height: 44px;
+    font-size: 15px;
+  }
+
+  &__social {
+
+    a {
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+    }
+
+    svg {
+      fill: $icon-color;
+
+      &:hover {
+        fill: $blue-color
+      }
+    }
+  }
+}
