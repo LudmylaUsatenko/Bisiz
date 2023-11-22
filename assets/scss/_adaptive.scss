@@ -421,6 +421,44 @@
   } 
 }
 
+// Results  
+.results {
+  @media (max-width: $tablet) {
+    padding: 100px 0 188px;
+    margin-bottom: 100px;
+
+    &__wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 40px;
+    }
+
+    .img-container {
+      bottom: -285px;
+      left: 58%;
+      width: 360px;
+      height: 360px;
+  }
+  }
+
+  @media (max-width: $mobile) {
+    padding: 60px 0 188px;
+    margin-bottom: 60px;
+
+    &__item-left {
+      padding-right: inherit;
+  }
+  }
+
+  @media (max-width: 540px) {
+    .img-container {
+      bottom: -261px;
+      width: 280px;
+      height: 280px;
+  }
+
+  }
+}
+
 // Team 
 .team {
   @media (max-width: $tablet) {
@@ -430,6 +468,10 @@
       grid-template-columns: repeat(2, 1fr);
       column-gap: 40px;
       row-gap: 40px;
+    }
+
+    &__text {
+      max-width: inherit;
     }
   }
 
@@ -444,9 +486,14 @@
       row-gap: 40px;
     }
 
-    &__text {
-      max-width: inherit;
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__btn {
+      width: 100%;
     }
   }
-
 }

@@ -496,13 +496,24 @@
       padding-right: 100px;
     }
 
+    &-right {
+      padding-top: 37px;
+    }
+
     .h4 {
       margin-bottom: 36px;
       color: $white-color;
     }
 
+    li {
+      padding-left: 17px;
+      position: relative;
+    }
+
     svg {
-      margin-right: 5px;
+      position: absolute;
+      top: 6px;
+      left: 0;
     }
   }
 
@@ -510,70 +521,28 @@
     margin-bottom: 22px;
   }
 
-  &__percent {
-    margin-bottom: 0;
-    display: inline-block;
-  }
-
-  .percent1 {
-    padding-left: 37px;
-    padding-bottom: 3px;
-  }
-
-  .percent2 {
-    padding-left: 405px;
-  }
-
-  .percent3 {
-    padding-left: 195px;
-  }
-
   &__card {
+    display: flex;
+    flex-direction: column;
     &:not(:last-child) {
-      margin-bottom: 31px;
+      margin-bottom: 64px;
     }
   }
 
-  &__line1 {
+  &__line {
     position: relative;
-    display: inline-block;
-
-    &::before {
-      content: "";
-      width: 32px;
-      height: 5px;
-      background: $white-color;
+    height: 5px;
+    background: $white-color;
+    p {
       position: absolute;
-      top: -4px;
+      bottom: -12px;
+      left: calc(100% + 10px);
+      margin: 0;
     }
   }
 
-  &__line2 {
-    position: relative;
-    display: inline-block;
-
-    &::before {
-      content: "";
-      width: 393px;
-      height: 5px;
-      background: $white-color;
-      position: absolute;
-      top: -7px;
-    }
-  }
-
-  &__line3 {
-    position: relative;
-    display: inline-block;
-
-    &::before {
-      content: "";
-      width: 184px;
-      height: 5px;
-      background: $white-color;
-      position: absolute;
-      top: -7px;
-    }
+  &__right-text {
+    margin-top: 15px;
   }
 
   .img-container {
