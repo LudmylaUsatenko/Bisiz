@@ -142,6 +142,12 @@ p:hover {
   margin: 0 auto;
 }
 
+.big-container {
+  max-width: 1880px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .h1 {
   font-weight: 700;
   font-size: 64px;
@@ -253,7 +259,7 @@ p:hover {
 }
 
 .header {
-  padding: 20px;
+  padding: 20px 0;
   margin-bottom: 71px;
 }
 .header__wrapper {
@@ -575,7 +581,7 @@ p:hover {
 }
 
 .services {
-  margin-top: -135px;
+  margin-top: -131px;
   padding: 509px 0 140px;
   margin-bottom: 140px;
   background: #E6F2FE;
@@ -612,7 +618,7 @@ p:hover {
 }
 
 .prices {
-  margin-bottom: 129px;
+  margin-bottom: 133px;
 }
 .prices__wrapper {
   text-align: center;
@@ -700,8 +706,8 @@ p:hover {
 }
 
 .results {
-  margin-bottom: 144px;
-  padding: 140px 0 188px;
+  margin-bottom: 146px;
+  padding: 140px 0 186px;
   background: #1080d0;
   color: #ffffff;
 }
@@ -796,7 +802,7 @@ p:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 154px;
+  margin-bottom: 148px;
 }
 .team__title {
   margin-bottom: 50px;
@@ -844,6 +850,312 @@ p:hover {
 }
 .team__social svg:hover {
   fill: #1080d0;
+}
+
+.reviews {
+  margin-bottom: 137px;
+  padding: 140px 20px;
+  background: #e6f2fe;
+}
+.reviews .slick-list,
+.reviews .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.reviews .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.reviews__subtitle {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.reviews__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.reviews__slider {
+  margin: 0 -20px;
+}
+.reviews__item {
+  padding: 0 20px;
+}
+.reviews__card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #ffffff;
+  padding: 54px 40px 58px;
+  margin-bottom: 34px;
+  position: relative;
+}
+.reviews__card svg {
+  margin-bottom: 25px;
+}
+.reviews__card span {
+  position: absolute;
+  bottom: -21px;
+  left: 80px;
+  display: inline-block;
+  border-top: 24px solid #ffffff;
+  border-right: 24px solid transparent;
+}
+.reviews__h4 {
+  margin-bottom: 20px;
+}
+.reviews__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.reviews__content .img-container {
+  width: 80px;
+  height: 80px;
+}
+.reviews__content .img-container img {
+  border-radius: 50%;
+}
+.reviews__content-info {
+  padding-left: 20px;
+}
+.reviews__content-title {
+  font-weight: 600;
+  color: #222222;
+  line-height: 29px;
+}
+.reviews__content-text {
+  margin-bottom: -4px;
+  font-size: 14px;
+}
+.reviews__content-link {
+  color: #1080d0;
+  font-size: 14px;
+}
+.reviews__content-link:hover {
+  color: #222222;
+}
+.reviews .slick-dots {
+  margin-top: 51px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.reviews .slick-dots li {
+  margin: 0 10px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.reviews .slick-dots li button {
+  font-size: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+}
+.reviews .slick-dots li button:hover {
+  background-color: #222222;
+}
+.reviews .slick-dots .slick-active button {
+  background-color: #222222;
+}
+
+.business {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 130px;
+  padding-bottom: 219px;
+}
+.business__subtitle {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.business__title {
+  margin-bottom: 26px;
+}
+.business__text {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 75px;
+}
+
+.contact-form {
+  display: inline-block;
+  position: relative;
+  padding: 60px 40px 230px;
+  background: #e6f2fe;
+  max-width: 760px;
+  width: 100%;
+}
+.contact-form .form-title {
+  margin-bottom: 23px;
+}
+.contact-form .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+.contact-form .form-content {
+  width: 50%;
+}
+.contact-form .form-input {
+  width: 100%;
+  padding: 5px 23px;
+  border-radius: 4px;
+  border: 1px solid #D4E5F5;
+  height: 60px;
+  margin-bottom: 15px;
+  outline: #D4E5F5;
+  cursor: pointer;
+}
+.contact-form .form-input::-webkit-input-placeholder {
+  opacity: 0.5;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Gothic A1";
+}
+.contact-form .form-input::-moz-placeholder {
+  opacity: 0.5;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Gothic A1";
+}
+.contact-form .form-input:-ms-input-placeholder {
+  opacity: 0.5;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Gothic A1";
+}
+.contact-form .form-input::-ms-input-placeholder {
+  opacity: 0.5;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Gothic A1";
+}
+.contact-form .form-input::placeholder {
+  opacity: 0.5;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Gothic A1";
+}
+.contact-form .form-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  color: #222222;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.contact-form .form-message {
+  padding: 19px 23px 5px;
+  resize: none;
+  height: 156px;
+}
+.contact-form .form-btn {
+  margin: 0 auto;
+}
+.contact-form .business__checkbox {
+  position: relative;
+  margin-bottom: 23px;
+  font-size: 14px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact-form .business__checkbox label {
+  padding-left: 30px;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.contact-form .form__checkbox {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+.contact-form .custom__checkbox {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #D4E5F5;
+}
+.contact-form .custom__checkbox::before {
+  content: "";
+  width: 12px;
+  height: 10px;
+  background-image: url("../img/checkbox-img.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+.contact-form a {
+  display: contents;
+  color: #1080d0;
+}
+.contact-form a:hover {
+  color: #222222;
+}
+.contact-form .form__checkbox:checked + .custom__checkbox::before {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+.contact-form .img-container {
+  position: absolute;
+  bottom: -218px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 402px;
+  height: 402px;
 }
 
 @media (max-width: 1073px) {
@@ -1293,5 +1605,79 @@ p:hover {
   }
   .team__btn {
     width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .reviews {
+    padding: 100px 0px;
+    margin-bottom: 100px;
+  }
+  .reviews__slider {
+    margin: 0 -10px;
+  }
+  .reviews__item {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews {
+    padding: 60px 0px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 425px) {
+  .reviews__card {
+    padding: 45px 20px 45px;
+  }
+  .reviews .slick-dots li {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .business {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .business {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 540px) {
+  .business .contact-form {
+    padding: 60px 20px 230px;
+  }
+  .business .form-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .business .form-content {
+    width: 100%;
+  }
+  .business .img-container {
+    bottom: -100px;
+    width: 300px;
+    height: 300px;
+  }
+  .business .business__checkbox {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .business .business__text {
+    margin-bottom: 40px;
+  }
+  .business .form-text {
+    font-size: 12px;
+    margin-bottom: inherit;
+  }
+  .business .form-input {
+    height: 45px;
+    margin-bottom: 5px;
+  }
+  .business .form-message {
+    height: 100px;
   }
 }
